@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ToDo List</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>ToDo List</h1>
+    <div class="add-item">
+      <input type="text" id="new-item" placeholder="Add New Task" />
+      <button id="add-btn" onclick="addItem()">Add</button>
+    </div>
+    <div class="tasks">
+      <h2>Pending Tasks</h2>
+      <ul id="pending-list"></ul>
+      <h2>Completed Tasks</h2>
+      <ul id="completed-list"></ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+In this code, we have defined two variables pendingList and completedList to hold references to the <ul> elements where we will be rendering the tasks.
+
+We have also defined an array tasks to hold the task objects. We retrieve this array from localStorage and parse it using JSON.parse(). If there are no tasks in localStorage, we initialize tasks to an empty array.
+
+The renderTasks() function is responsible for rendering the tasks on the page. It first clears the pendingList and completedList using innerHTML = "". Then, it iterates over the tasks array and creates an <li> element for each task. The <li> element contains the task title, date, and three buttons: Edit, Delete, and Complete. Depending on the task's completed status, the <li> element is appended to the pendingList or completedList.
+
+We call the renderTasks() function once on page load to render the tasks that are already in tasks array.
+
+The addItem() function is called when the user clicks the "Add" button. It retrieves the task title from the input field and creates a new task object with the current date and completed status set to false. The new task object is pushed to the tasks array, and the array is stored in localStorage using JSON.stringify(). Finally, the renderTasks() function is called to re-render the tasks on the page, and the input field is cleared.
+
+The editTask() function is called when the user clicks the "Edit" button on a task. It prompts the user to enter a new task title and updates the corresponding task object in the tasks array

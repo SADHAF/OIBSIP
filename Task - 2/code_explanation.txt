@@ -1,0 +1,46 @@
+HTML Code:
+
+The <!DOCTYPE html> tag declares the document type and version.
+The <html> tag is the root element of the HTML document.
+The <head> tag contains metadata about the document, including the title and external CSS file.
+The <title> tag sets the title of the webpage, which appears in the browser tab.
+The <link> tag specifies the external CSS file to be used to style the webpage.
+The <body> tag contains the main content of the webpage.
+The <header> tag contains the page header, which includes the title and subtitle.
+The <h1> and <h2> tags are used for the title and subtitle, respectively. They are styled using CSS.
+The <main> tag contains the main content of the webpage, which includes several sections.
+The <section> tag is used to divide the main content into sections.
+The <img> tag is used to display an image of Mother Teresa.
+The <h3> tag is used for the subtitles of each section.
+The <ul> tag creates an unordered list, which contains a list of awards and recognitions.
+The <li> tag creates list items, which are part of the unordered list.
+The <footer> tag contains a quote from Mother Teresa and is styled using CSS.
+CSS Code:
+
+The body selector applies styles to the entire page, including the font family, background color, and text alignment.
+The header selector applies styles to the header section, including the margin at the top of the section.
+The h1 and h2 selectors apply styles to the title and subtitle, including the color, font size, and center alignment.
+The section selector applies styles to the main content sections, including the margin at the top of each section and the left alignment of the text.
+The #image img selector applies styles to the image section, including the width, display mode, and center alignment.
+The h3 selector applies styles to the subtitles of each section, including the color, font size, and margin at the top of each subtitle.
+The ul selector applies styles to the unordered list, including the bullet style, margin at the top of the list, and left alignment of the list items.
+The li selector applies styles to the list items, including the margin at the bottom of each item.
+The footer selector applies styles to the footer section, including the background color, text color, padding, margin at the top of the section, and center alignment of the text. The footer text is also styled using the footer p and footer a selectors.
+Overall, this HTML and CSS code creates a tribute page for Mother Teresa, including a header section, an image section, and several content sections that provide information about her life and legacy. The styles applied using CSS help to create an attractive and readable webpage.
+
+
+------------------------------------------------------------------------------------------
+This code represents a basic HTML document that serves as a tribute page to Mother Teresa. The content is divided into different sections using HTML tags, and the page is styled using CSS.
+
+The HTML code starts with the DOCTYPE declaration, which specifies the type of document being used. This is followed by the opening and closing HTML tags, which enclose all the content on the page. Inside the HTML tags, there is a head section that contains a title tag, which specifies the title of the page, and a link tag that references an external CSS file named "mother-teresa.css".
+
+The body section contains the main content of the page, which is structured using different HTML tags. The header section contains two heading tags, h1 and h2, which display the main title and subtitle of the page. The main section is divided into several sections that each contain a heading tag and a paragraph tag, which describe different aspects of Mother Teresa's life and work. The image section contains an image tag that displays a picture of Mother Teresa.
+
+The footer section contains a paragraph tag with a quote from Mother Teresa and attribution information. The CSS file styles all the different elements of the page, including the body, header, titles, sections, images, lists, and footer. The styles include font-family, font-size, color, margin, padding, background-color, and text-align properties.
+
+Overall, the HTML and CSS code work together to create a basic and informative tribute page to Mother Teresa.
+
+
+
+
+

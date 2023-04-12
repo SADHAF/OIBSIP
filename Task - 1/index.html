@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>This is a Calculator</h1>
+      <p>Can you do the Math? Come on Give it a try!</p>
+	<div class="calculator">
+		<input type="text" id="result" disabled>
+		<div class="row">
+			<button onclick="clearResult()">C</button>
+			<button onclick="backspace()">&larr;</button>
+			<button onclick="insertSymbol('/')" class="operator">&#247;</button>
+			<button onclick="insertSymbol('*')" class="operator">&times;</button>
+		</div>
+		<div class="row">
+			<button onclick="insertSymbol('7')">7</button>
+			<button onclick="insertSymbol('8')">8</button>
+			<button onclick="insertSymbol('9')">9</button>
+			<button onclick="insertSymbol('-')" class="operator">&#8722;</button>
+		</div>
+		<div class="row">
+			<button onclick="insertSymbol('4')">4</button>
+			<button onclick="insertSymbol('5')">5</button>
+			<button onclick="insertSymbol('6')">6</button>
+			<button onclick="insertSymbol('+')" class="operator">&#43;</button>
+		</div>
+		<div class="row">
+			<button onclick="insertSymbol('1')">1</button>
+			<button onclick="insertSymbol('2')">2</button>
+			<button onclick="insertSymbol('3')">3</button>
+			<button onclick="calculate()">=</button>
+		</div>
+		<div class="row">
+			<button onclick="insertSymbol('0')">0</button>
+			<button onclick="insertSymbol('.')">.</button>
+			<button onclick="insertSymbol('Math.PI')" class="operator">&#960;</button>
+			<button onclick="insertSymbol('%')">%</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

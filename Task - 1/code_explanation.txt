@@ -1,0 +1,90 @@
+This code is a basic HTML, CSS, and JavaScript implementation of a simple calculator. 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+This is the standard HTML document structure. <!DOCTYPE html> is used to specify the document type, html is the root element of an HTML page, and head is used to contain metadata about the document (in this case, the document title and a link to a stylesheet), while body is used to contain the visible content of the document.
+
+
+<h1>This is a Calculator</h1>
+<p>Can you do the Math? Come on Give it a try!</p>
+These are just basic HTML heading and paragraph tags, used to introduce the calculator.
+
+
+<div class="calculator">
+    <input type="text" id="result" disabled>
+    <div class="row">
+        <button onclick="clearResult()">C</button>
+        <button onclick="backspace()">&larr;</button>
+        <button onclick="insertSymbol('/')" class="operator">&#247;</button>
+        <button onclick="insertSymbol('*')" class="operator">&times;</button>
+    </div>
+    <div class="row">
+        <button onclick="insertSymbol('7')">7</button>
+        <button onclick="insertSymbol('8')">8</button>
+        <button onclick="insertSymbol('9')">9</button>
+        <button onclick="insertSymbol('-')" class="operator">&#8722;</button>
+    </div>
+    <div class="row">
+        <button onclick="insertSymbol('4')">4</button>
+        <button onclick="insertSymbol('5')">5</button>
+        <button onclick="insertSymbol('6')">6</button>
+        <button onclick="insertSymbol('+')" class="operator">&#43;</button>
+    </div>
+    <div class="row">
+        <button onclick="insertSymbol('1')">1</button>
+        <button onclick="insertSymbol('2')">2</button>
+        <button onclick="insertSymbol('3')">3</button>
+        <button onclick="calculate()">=</button>
+    </div>
+    <div class="row">
+        <button onclick="insertSymbol('0')">0</button>
+        <button onclick="insertSymbol('.')">.</button>
+        <button onclick="insertSymbol('Math.PI')" class="operator">&#960;</button>
+        <button onclick="insertSymbol('%')">%</button>
+    </div>
+</div>
+This is the main part of the calculator interface, contained in a div element with class calculator. It contains a text input field with id of result that is initially disabled (i.e., the user cannot type in it). The calculator buttons are contained in several div elements with class row, each containing four buttons. The buttons are each assigned an onclick attribute that calls a JavaScript function defined in the script.js file.
+
+
+<script src="script.js"></script>
+</body>
+</html>
+This is a script tag that loads a JavaScript file called script.js, which contains the functions called by the calculator buttons.
+
+
+
+
+
+
+CSS File:
+The CSS file (style.css) contains styling information for the HTML elements. It is linked to the HTML file using the <link> tag in the <head> section of the HTML file. Here is an explanation of the CSS rules used in this file:
+
+body: sets the background color of the entire page to #FFF8DC.
+h1, p: centers the text of the <h1> and <p> elements.
+.calculator: positions the calculator in the center of the page using absolute positioning, and centers it using the transform property. It also sets the width, height, margin, padding, and border-radius properties to give the calculator a specific size and appearance.
+.calculator input: sets the width, height, font-size, and padding of the input field used to display the calculator's result. It also sets the border-radius and border properties to give the input field a rounded appearance.
+.calculator input:focus: removes the outline that appears around the input field when it is in focus.
+.calculator .row: sets the display and flex-wrap properties for the rows of buttons.
+.calculator .row button: sets the flex, height, margin-right, font-size, border-radius, border, background-color, and cursor properties for each button in the calculator. The flex property causes the buttons to expand to fill the width of their container, and the height property sets their height. The margin-right property creates spacing between buttons. The font-size property sets the size of the text inside the buttons. The border-radius and border properties create a rounded appearance for the buttons. The background-color property sets the background color of the buttons, and the cursor property changes the mouse cursor to a pointer when hovering over the buttons.
+.calculator .row button:last-child: removes the margin-right property from the last button in each row.
+.calculator .row button:hover: changes the background-color of the buttons when hovering over them.
+.calculator .row button:active: changes the background-color of the buttons when they are clicked.
+
+
+
+
+JavaScript File:
+The JavaScript file (script.js) contains the code that implements the calculator's functionality. It is linked to the HTML file using the <script> tag in the <body> section of the HTML file. Here is an explanation of the JavaScript functions used in this file:
+
+insertSymbol(symbol): This function is called when a digit or operator button is clicked. It appends the clicked symbol to the end of the input field.
+clearResult(): This function is called when the "C" button is clicked. It clears the input field.
+backspace(): This function is called when the backspace button is clicked. It removes the last character from the input field.
+calculate(): This function is called when the "=" button is clicked. It evaluates the expression in the input field using the eval() function, and sets the input field to the result. If an error occurs during evaluation, it sets the input field to "Error".
+
+

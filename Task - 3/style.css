@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.add-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.add-item input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.add-item button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tasks {
+  margin-top: 50px;
+}
+
+.tasks h2 {
+  margin-bottom: 20px;
+}
+
+.tasks ul {
+  list-style: none;
+}
+
+.tasks ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.tasks ul li span {
+  margin-right: 10px;
+}
+
+.tasks ul li .edit-btn,
+.tasks ul li .delete-btn {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tasks ul li .edit-btn {
+  margin-right: 10px;
+}
+
+.tasks ul li.completed {
+  background-color: #c8e6c9;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.tasks ul li.completed .edit-btn,
+.tasks ul li.completed .delete-btn {
+  background-color: #e57373;
+}
